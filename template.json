@@ -8,11 +8,27 @@
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
       "@types/jest": "^26.0.15",
-      "typescript": "^4.1.2",
+      "kea": "^2.3.7",
+      "kea-loaders": "^0.4.0",
+      "kea-router": "^0.5.2",
+      "node-sass": "^5.0.0",
+      "react-redux": "^7.2.4",
+      "redux": "^4.1.0",
+      "reselect": "^4.0.0",
+      "typescript": "^4.2.4",
       "web-vitals": "^1.0.1"
+    },
+    "devDependencies": {
+      "concurrently": "^6.0.2",
+      "kea-typegen": "^0.7.0"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
+    },
+    "scripts": {
+      "start": "concurrently \"yarn start:cra\" \"yarn start:typegen\" -n CRA,KEA -c blue,green",
+      "start:cra": "react-scripts start",
+      "start:typegen": "kea-typegen watch"
     }
   }
 }
