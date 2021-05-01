@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { getContext, resetContext } from 'kea'
+import { Provider, resetContext } from 'kea'
 import { routerPlugin } from 'kea-router'
 import { loadersPlugin } from 'kea-loaders'
-import { Provider } from 'react-redux'
 
 resetContext({
   plugins: [routerPlugin, loadersPlugin],
 })
 
 ReactDOM.render(
-  <Provider store={getContext().store}>
+  <Provider>
     <App />
   </Provider>,
   document.getElementById('root')
