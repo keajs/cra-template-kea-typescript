@@ -14,9 +14,7 @@ resetContext({
 
 ReactDOM.render(
   <Provider store={getContext().store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </Provider>,
   document.getElementById('root')
 )
