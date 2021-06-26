@@ -7,11 +7,11 @@ To use this template, add `--template kea-typescript` when creating a new app.
 For example:
 
 ```sh
-npx create-react-app my-app --template kea-typescript
+npx create-react-app --template kea-typescript my-app
 
 # or
 
-yarn create react-app my-app --template kea-typescript
+yarn create react-app --template kea-typescript my-app
 ```
 
 For more information, please refer to:
