@@ -8,7 +8,7 @@
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
       "@types/jest": "^26.0.15",
-      "kea": "^2.4.2",
+      "kea": "^2.4.3",
       "kea-loaders": "^0.4.0",
       "kea-router": "^0.5.3",
       "react-redux": "^7.2.4",
@@ -20,7 +20,7 @@
     },
     "devDependencies": {
       "concurrently": "^6.0.2",
-      "kea-typegen": "^0.8.0-beta.6"
+      "kea-typegen": "^1.0.0"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
