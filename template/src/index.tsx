@@ -3,13 +3,10 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { Provider, resetContext } from 'kea'
-import { routerPlugin } from 'kea-router'
-import { loadersPlugin } from 'kea-loaders'
+import { Provider } from 'kea'
+import { initKea } from './initKea'
 
-resetContext({
-  plugins: [routerPlugin, loadersPlugin],
-})
+initKea()
 
 ReactDOM.render(
   <Provider>

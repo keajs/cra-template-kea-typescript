@@ -4,13 +4,28 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
   margin: 100px 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 15s linear;
+    cursor: pointer;
+    animation: App-logo-spin infinite linear;
+    &.App-logo--speed-0 {
+      animation: none;
+    }
+    &.App-logo--speed-1 {
+      animation-duration: 15s;
+    }
+    &.App-logo--speed-2 {
+      animation-duration: 7s;
+    }
+    &.App-logo--speed-3 {
+      animation-duration: 2s;
+    }
+    &.App-logo--speed-4 {
+      animation-duration: 1s;
+    }
   }
 }
 

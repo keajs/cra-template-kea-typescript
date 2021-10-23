@@ -1,12 +1,17 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.scss'
+import { useActions, useValues } from 'kea'
+import { appLogic } from './appLogic'
 
 function App() {
+  const { speed } = useValues(appLogic)
+  const { goFaster } = useActions(appLogic)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className={`App-logo App-logo--speed-${speed}`} alt="logo" onClick={goFaster} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
