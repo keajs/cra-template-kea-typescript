@@ -9,7 +9,7 @@ describe('App', () => {
     initKea()
   })
 
-  test('renders learn react link', () => {
+  test('renders learn kea link', () => {
     render(
       <Provider>
         <App />
