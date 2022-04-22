@@ -1,11 +1,11 @@
-import { kea } from 'kea'
+import { kea, actions, reducers } from 'kea'
 import { appLogicType } from './appLogicType'
 
-export const appLogic = kea<appLogicType>({
-  actions: {
+export const appLogic = kea<appLogicType>([
+  actions({
     goFaster: true,
-  },
-  reducers: {
+  }),
+  reducers({
     speed: [1, { goFaster: (state) => (state + 1) % 5 }],
-  },
-})
+  }),
+])
