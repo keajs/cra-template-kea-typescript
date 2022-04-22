@@ -1,7 +1,7 @@
 import React from 'react'
 import { render as _render, screen } from '@testing-library/react'
-import App from './App'
-import { initKea } from './initKea'
+import { App } from './App'
+import { initKea } from '../initKea'
 import { Provider } from 'kea'
 
 const render = (element: React.ReactElement) => _render(<Provider>{element}</Provider>)

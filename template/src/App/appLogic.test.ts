@@ -1,6 +1,6 @@
 import { expectLogic } from 'kea-test-utils'
 import { appLogic } from './appLogic'
-import { initKea } from './initKea'
+import { initKea } from '../initKea'
 
 describe('appLogic', () => {
   beforeEach(() => {
