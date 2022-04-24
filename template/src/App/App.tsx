@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.scss'
 import { useActions, useValues } from 'kea'
 import { appLogic } from './appLogic'
-import { DemoForm } from "./DemoForm/DemoForm";
+import { DemoForm } from './DemoForm/DemoForm'
 
 export function App() {
   const { speed } = useValues(appLogic)
@@ -20,7 +20,7 @@ export function App() {
           Learn Kea
         </a>
       </header>
-      <section className="App-forms" >
+      <section className="App-forms">
         <DemoForm />
       </section>
     </div>
