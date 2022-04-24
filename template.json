@@ -30,7 +30,7 @@
     "scripts": {
       "start": "concurrently \"yarn start:cra\" \"yarn start:typegen\" -n CRA,KEA -c blue,green",
       "start:cra": "react-scripts start",
-      "start:typegen": "kea-typegen watch"
+      "start:typegen": "kea-typegen watch --write-paths --root ./src"
     }
   }
 }
