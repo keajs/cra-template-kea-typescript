@@ -15,5 +15,5 @@ if (root) {
     </Provider>
   )
 } else {
-  console.error('Could not find element matching "#root"')
+  console.error(`Could not find element matching "#root"`)
 }

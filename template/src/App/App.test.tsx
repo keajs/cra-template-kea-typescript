@@ -9,9 +9,9 @@ const render = (element: React.ReactElement) => _render(<Provider>{element}</Pro
 describe('App', () => {
   beforeEach(initKea)
 
-  test('renders "This is your app"', () => {
+  test('renders learn kea link', () => {
     render(<App />)
-    const text = screen.getByText(/This is your app/i)
-    expect(text).toBeInTheDocument()
+    const linkElement = screen.getByText(/learn kea/i)
+    expect(linkElement).toBeInTheDocument()
   })
 })
