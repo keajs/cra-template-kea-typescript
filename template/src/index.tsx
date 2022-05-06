@@ -1,15 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import React from 'react'
+import { createRoot } from 'react-dom/client'
 import { Provider } from 'kea'
+import App from './App'
 import { initKea } from './initKea'
 
 initKea()
 
-ReactDOM.render(
-  <Provider>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+const rootDiv = document.getElementById('root')
+if (rootDiv) {
+  const root = createRoot(rootDiv)
+  root.render(
+    <Provider>
+      <App />
+    </Provider>
+  )
+}
