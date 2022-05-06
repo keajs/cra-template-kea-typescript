@@ -6,22 +6,22 @@
       "@testing-library/user-event": "^13.2.1",
       "@types/jest": "^27.0.1",
       "@types/node": "^16.7.13",
-      "@types/react": "^17.0.20",
-      "@types/react-dom": "^17.0.9",
+      "@types/react": "^18.0.6",
+      "@types/react-dom": "^18.0.2",
       "history": "^5.0.1",
-      "kea": "^2.5.4",
+      "kea": "^2.6.0",
       "kea-loaders": "^0.5.1",
       "kea-router": "^1.0.5",
       "react-redux": "^7.2.4",
-      "redux": "^4.1.0",
-      "reselect": "^4.0.0",
+      "redux": "^4.2.0",
+      "reselect": "^4.1.5",
       "sass": "^1.35.1",
-      "typescript": "^4.4.2"
+      "typescript": "^4.6.3"
     },
     "devDependencies": {
       "concurrently": "^6.0.2",
       "kea-test-utils": "^0.2.1",
-      "kea-typegen": "^1.2.2"
+      "kea-typegen": "^1.4.4"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
@@ -29,7 +29,7 @@
     "scripts": {
       "start": "concurrently \"yarn start:cra\" \"yarn start:typegen\" -n CRA,KEA -c blue,green",
       "start:cra": "react-scripts start",
-      "start:typegen": "kea-typegen watch"
+      "start:typegen": "kea-typegen watch --write-paths --root src/ --add-ts-nocheck"
     }
   }
 }
