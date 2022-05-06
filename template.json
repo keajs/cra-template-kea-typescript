@@ -9,8 +9,8 @@
       "@types/react": "^18.0.6",
       "@types/react-dom": "^18.0.2",
       "history": "^5.0.1",
-      "kea": "^3.0.0-alpha.6",
-      "kea-forms": "^3.0.0-alpha.2",
+      "kea": "^3.0.0-alpha.14",
+      "kea-forms": "^3.0.0-alpha.3",
       "kea-loaders": "^3.0.0-alpha.2",
       "kea-router": "^3.0.0-alpha.0",
       "react-redux": "^8.0.1",
@@ -22,7 +22,7 @@
     "devDependencies": {
       "concurrently": "^6.0.2",
       "kea-test-utils": "^0.2.1",
-      "kea-typegen": "^3.0.0-alpha.5"
+      "kea-typegen": "^3.0.0-alpha.7"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
@@ -30,7 +30,7 @@
     "scripts": {
       "start": "concurrently \"yarn start:cra\" \"yarn start:typegen\" -n CRA,KEA -c blue,green",
       "start:cra": "react-scripts start",
-      "start:typegen": "kea-typegen watch --write-paths --root ./src"
+      "start:typegen": "kea-typegen watch --write-paths --root ./src --add-ts-nocheck"
     }
   }
 }
