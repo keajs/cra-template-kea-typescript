@@ -58,9 +58,9 @@ export function DemoForm() {
         <button onClick={() => setUserFormValues({ accounts: [...userForm.accounts, {}] })}>Add Account</button>
 
         <Field name="subscribe">
-          {({ onValueChange, value }) => (
+          {({ onChange, value }) => (
             <label>
-              <input type="checkbox" onChange={(e) => onValueChange(e.target.checked)} value={value} /> Subscribe to our
+              <input type="checkbox" onChange={(e) => onChange(e.target.checked)} value={value} /> Subscribe to our
               newsletter!!
             </label>
           )}
