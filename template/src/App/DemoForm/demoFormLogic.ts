@@ -1,4 +1,4 @@
-import { actions, kea, reducers } from 'kea'
+import { actions, kea, reducers, path } from 'kea'
 import type { demoFormLogicType } from './demoFormLogicType'
 import { validateEmail } from './utils'
 import { forms } from 'kea-forms'
@@ -21,6 +21,7 @@ export interface UserFormType {
 }
 
 export const demoFormLogic = kea<demoFormLogicType<UserFormType>>([
+  path(['App', 'DemoForm', 'demoFormLogic']),
   forms({
     userForm: {
       defaults: {
