@@ -1,8 +1,8 @@
 import { kea, actions, reducers, path } from 'kea'
-import type { appLogicType } from './appLogicType'
+import type { headerLogicType } from './headerLogicType'
 
-export const appLogic = kea<appLogicType>([
-  path(['App', 'appLogic']),
+export const headerLogic = kea<headerLogicType>([
+  path(['App', 'headerLogic']),
   actions({
     goFaster: true,
   }),

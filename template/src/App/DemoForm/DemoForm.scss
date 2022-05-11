@@ -1,4 +1,12 @@
 .DemoForm {
+  .DemoForm--form {
+    min-width: 360px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
   .form-input-container {
     margin: 20px 0;
   }
