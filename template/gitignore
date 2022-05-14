@@ -3,6 +3,9 @@
 # kea
 *Type.ts
 
+# intellij
+.idea
+
 # dependencies
 /node_modules
 /.pnp

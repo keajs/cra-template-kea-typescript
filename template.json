@@ -1,17 +1,18 @@
 {
   "package": {
     "dependencies": {
-      "@testing-library/jest-dom": "^5.14.1",
-      "@testing-library/react": "^12.0.0",
-      "@testing-library/user-event": "^13.2.1",
-      "@types/jest": "^27.0.1",
+      "@testing-library/jest-dom": "^5.16.4",
+      "@testing-library/react": "^13.1.1",
+      "@testing-library/user-event": "^14.1.1",
+      "@types/jest": "^27.4.1",
       "@types/node": "^16.7.13",
       "@types/react": "^18.0.6",
       "@types/react-dom": "^18.0.2",
       "history": "^5.0.1",
-      "kea": "^2.6.0",
-      "kea-loaders": "^0.5.1",
-      "kea-router": "^1.0.5",
+      "kea": "^3.0.0-alpha.14",
+      "kea-forms": "^3.0.0-alpha.3",
+      "kea-loaders": "^3.0.0-alpha.2",
+      "kea-router": "^3.0.0-alpha.0",
       "react-redux": "^8.0.1",
       "redux": "^4.2.0",
       "reselect": "^4.1.5",
@@ -21,7 +22,7 @@
     "devDependencies": {
       "concurrently": "^6.0.2",
       "kea-test-utils": "^0.2.1",
-      "kea-typegen": "^1.4.4"
+      "kea-typegen": "^3.0.0-alpha.7"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
@@ -29,7 +30,7 @@
     "scripts": {
       "start": "concurrently \"yarn start:cra\" \"yarn start:typegen\" -n CRA,KEA -c blue,green",
       "start:cra": "react-scripts start",
-      "start:typegen": "kea-typegen watch --write-paths --root src/ --add-ts-nocheck"
+      "start:typegen": "kea-typegen watch --write-paths --root ./src --add-ts-nocheck"
     }
   }
 }
