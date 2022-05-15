@@ -9,20 +9,17 @@
       "@types/react": "^18.0.6",
       "@types/react-dom": "^18.0.2",
       "history": "^5.0.1",
-      "kea": "^3.0.0-alpha.14",
-      "kea-forms": "^3.0.0-alpha.3",
-      "kea-loaders": "^3.0.0-alpha.2",
-      "kea-router": "^3.0.0-alpha.0",
-      "react-redux": "^8.0.1",
-      "redux": "^4.2.0",
-      "reselect": "^4.1.5",
+      "kea": "^3.0.0",
+      "kea-forms": "^3.0.0",
+      "kea-loaders": "^3.0.0",
+      "kea-router": "^3.0.0",
       "sass": "^1.35.1",
       "typescript": "^4.6.3"
     },
     "devDependencies": {
       "concurrently": "^6.0.2",
       "kea-test-utils": "^0.2.1",
-      "kea-typegen": "^3.0.0-alpha.7"
+      "kea-typegen": "^3.0.0"
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
